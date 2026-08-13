@@ -1,0 +1,22 @@
+# include <iostream>
+using namespace std;
+class Example {
+    private:
+    int a,b;
+    public:
+    void getdata( );
+    void print ( );
+};
+void Example :: getdata( ) {
+    cout <<" Enter the number :";
+    cin>>a>>b;
+}
+void Example :: print( ) {
+    cout<<a<<b;
+}
+int main ( ) {
+    Example E1;
+    E1.getdata( );
+    E1.print( );
+    return 0;
+}
